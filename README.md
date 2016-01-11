@@ -10,9 +10,7 @@ nodemon
 
 Your mission is to create a CRUD app that allows users to add movies to a movie database. The basic styles, form, and other templates have been created for you, but you'll need to wire up your database, routes and views.
 
-__Use Knex to interface with your database in your routes.__
-
-__All of your movies routes should be in `movies/books.js`__
+__All of your movies routes should be in `routes/movies.js`__
 
 ## Create a database called moviedb
 
@@ -20,8 +18,7 @@ __All of your movies routes should be in `movies/books.js`__
 psql postgres
 create database moviedb;
 \l (to confirm creation)
-\q
-psql moviedb
+\c moviedb
 ```
 
 ## Create a table called movies with the following columns:
@@ -74,4 +71,3 @@ When I click 'Delete'
 Then I should see a list of all movies
 And the deleted movie should not be listed
 ```
-
