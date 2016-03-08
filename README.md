@@ -58,8 +58,7 @@ __#4__
 
 ```
 When I click 'Edit'
-Then I should see a form
-And the form should be pre-filled with the current movie information
+Then I should see a form pre-filled with the current movie information
 When I change information for that movie
 And I click "Update"
 Then I should see my updated movie
