@@ -5,7 +5,7 @@ block content
   div.container
     if movie
       h1 Editing #{movie.title}
-      form
+      form(method="POST" action="/movie/#{movie.id}")
         div.form-group
           label(for="director") Director
           input.form-control(type="text" id="director" name='director' placeholder="Director")
