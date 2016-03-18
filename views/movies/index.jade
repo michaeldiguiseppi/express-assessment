@@ -17,10 +17,11 @@ block content
        for movie in movies
          tr
            td= movie.director
-           td= movie.title
+           td
+             a(href='/movie/#{movie.id}')= movie.title
            td= movie.rating
            td= movie.description
 
 
    div
-   a(href='#') Add a Movie
+   a(href='/movie/new') Add a Movie

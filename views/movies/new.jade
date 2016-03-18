@@ -4,7 +4,7 @@ block content
 
   div.container
     h1 Add a New Movie
-    form
+    form(method="POST" action="/movies")
       div.form-group
         label(for="director") Director
         input.form-control(type="text" id="director" name='director' placeholder="Director")
